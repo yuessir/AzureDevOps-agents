@@ -109,7 +109,7 @@ fi
 
 touch $STARTED_FILE
 
-./config.sh --unattended \
+./config.sh --sslskipcertvalidation --unattended \
   --agent "${AZP_AGENT_NAME:-$(hostname)}" \
   --url "$AZP_URL" \
   --auth PAT \

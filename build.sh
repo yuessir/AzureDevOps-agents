@@ -22,22 +22,6 @@ do
 
   cd ..
 
-  print_info "Building Python image"
-
-  cd ubuntu$VERSION-python
-
-  docker build -t devopsubuntu$VERSION-python:latest .
-
-  cd ..
-
-  print_info "Building Docker inception image"
-
-  cd ubuntu$VERSION-docker
-
-  docker build -t devopsubuntu$VERSION-docker:latest .
-
-  cd ..
-
   print_info "Building .NET Core image"
 
   cd ubuntu$VERSION-dotnet
@@ -46,11 +30,4 @@ do
 
   cd ..
 
-  print_info "Building Node.js image"
-
-  cd ubuntu$VERSION-nodejs
-
-  docker build -t devopsubuntu$VERSION-nodejs:latest .
-
-  cd ..
 done
